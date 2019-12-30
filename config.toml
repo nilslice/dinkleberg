@@ -33,10 +33,10 @@ educational_use="knowledge share" # OPTIONAL
 copyright_year="2018" # OPTIONAL
 
 
-sidebar = [
-    {name = "Social", urls=[
-        {name="Twitter", url=""},
-        {name="Facebook", url=""},
-        {name="Outro", url=""},
-    ]}
-]
+# sidebar = [
+#     {name = "Social", urls=[
+#         {name="Twitter", url=""},
+#         {name="Facebook", url=""},
+#         {name="Outro", url=""},
+#     ]}
+# ]

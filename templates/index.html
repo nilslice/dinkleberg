@@ -87,10 +87,12 @@
     <div class="container padding-header">
         {% block content -%}
             <main class="main">
-                {%- for page in paginator.pages -%}
-                    {{ macro::post(page=page) }}
-                {%- endfor -%}
-                {{ macro::post_nav(ref=paginator, extra=config.extra) }}
+                {% if paginator -%}
+                    {%- for page in paginator.pages -%}
+                        {{ macro::post(page=page) }}
+                    {%- endfor -%}
+                    {{ macro::post_nav(ref=paginator, extra=config.extra) }}
+                {%- endif -%}
             </main>
         {%- endblock content -%}
         {%- block sidebar %}

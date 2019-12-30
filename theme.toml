@@ -1,10 +1,14 @@
 name = "dinkleberg"
-description = "The Rust BR theme for Gutenberg"
+description = "The Zola theme for nilslice.xyz"
 license = "MIT"
-homepage = "https://github.com/rust-br/dinkleberg"
+homepage = "https://github.com/nilslice/dinkleberg"
 min_version = "0.4.0"
-demo = "https://rust-br.github.io/blog/"
+demo = "https://nilslice.xyz"
 
 [author]
+name = "Steve Manuel"
+homepage = "https://github.com/nilslice"
+
+[original]
 name = "Guilherme Diego"
 homepage = "https://github.com/guidiego"
