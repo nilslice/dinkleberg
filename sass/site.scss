@@ -1,10 +1,17 @@
 $font-core: 'Open Sans', sans-serif;
 $font-alt: 'Source Code Pro', monospace;
 
-$color-black: rgba(0,0,0,.84);
+$color-theme: rgb(241, 237, 226);
+$color-black: darken($color-theme, 75%);
 $color-grey: rgba(0,0,0,.54);
 $color-lgrey: rgba(0,0,0,0.20);
-$color-link: #2c3e50;
+$color-link: darken($color-theme, 60%);
+$color-light: lighten($color-theme, 5%);
+$color-dark: darken($color-theme, 30%);
+
+html, body {
+    background: $color-light;
+}
 
 body {
     margin: 0;
@@ -31,8 +38,10 @@ body {
 }
 
 pre {
+    font-size: 14px;
     padding: 10px;
-    overflow-x: scroll;
+    border-bottom: solid 1px $color-theme;
+    border-top: solid 2px $color-theme;
 }
 
 code {
@@ -47,7 +56,7 @@ code {
     border-bottom: 1px solid $color-lgrey;
     margin-bottom: 20px;
     width: 100%;
-    background: #FFF;
+    background: $color-theme;
     position: fixed;
 
     .title {
